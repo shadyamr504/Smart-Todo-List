@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="to-do.png">
+    <title>Smart Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class='bx bx-check-square'></i>
+                <h2>TaskMaster</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-filter="all">
+                    <i class='bx bx-list-ul'></i>
+                    All Tasks
+                </button>
+                <button class="nav-item" data-filter="pending">
+                    <i class='bx bx-loader'></i>
+                    Pending
+                </button>
+                <button class="nav-item" data-filter="completed">
+                    <i class='bx bx-check-double'></i>
+                    Completed
+                </button>
+            </nav>
+            <div class="sidebar-stats">
+                <div class="stat-item">
+                    <span id="r-count">0</span>
+                    <label>Total Tasks</label>
+                </div>
+                <div class="stat-item">
+                    <span id="c-count">0</span>
+                    <label>Completed</label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>My Tasks</h1>
+                <div class="header-actions">
+                    <button id="delete-selected" class="btn btn-outline">
+                        <i class='bx bx-trash'></i>
+                        Clear Completed
+                    </button>
+                    <button id="delete-all" class="btn btn-danger">
+                        <i class='bx bx-trash-alt'></i>
+                        Delete All
+                    </button>
+                </div>
+            </header>
+
+            <div class="task-input-container">
+                <div class="input-wrapper">
+                    <i class='bx bx-plus'></i>
+                    <input 
+                        id="todo-input" 
+                        type="text" 
+                        placeholder="Add a new task..."
+                        autocomplete="off"
+                    >
+                </div>
+                <button id="add-button" class="btn btn-primary">
+                    Add Task
+                </button>
+            </div>
+
+            <div class="todos-container">
+                <ul id="all-todos" class="todos-list">
+                    <!-- Tasks will be inserted here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

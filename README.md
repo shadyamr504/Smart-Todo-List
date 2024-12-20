@@ -1,6 +1,6 @@
 # Task Management App
 
-![Project Screenshot](./project-screenshot.png)
+
 
 ## Introduction
 This Task Management App is designed to help users organize their daily activities, manage priorities, and track progress efficiently. With a clean and modern interface, it is easy to use and adaptable to different needs.
@@ -14,20 +14,13 @@ This Task Management App is designed to help users organize their daily activiti
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/task-management-app.git
+   git clone https://github.com/shadyamr504/Smart-Todo-List
    ```
 2. Navigate to the project directory:
    ```bash
-   cd task-management-app
+   cd Smart-Todo-List
    ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the application:
-   ```bash
-   npm start
-   ```
+
 
 ## Usage
 1. Open the app in your browser.
@@ -36,9 +29,8 @@ This Task Management App is designed to help users organize their daily activiti
 4. Track your progress using the progress bar.
 
 ## Technologies Used
-- **Frontend**: React.js, HTML, CSS
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
+- **Frontend**: js, HTML, CSS
+
 
 ## Screenshot
 ![Screenshot](./project-screenshot.png)

@@ -49,6 +49,3 @@ This **Task Management App** is designed to help users organize their daily acti
 Feel free to contribute by submitting a pull request. Ensure your code follows the project's coding standards. 🛠️🌟  
 
 ---
-
-## License 📜  
-This project is licensed under the **MIT License**. ✨
